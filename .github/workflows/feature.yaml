@@ -1,0 +1,17 @@
+# Runs when code is pushed to any branch starting with "feature-" (to test new features early).
+name: Push to Feature Branch
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+  push:
+    branches:
+      - 'feature-*'
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo message
+        run: echo "🚀 Workflow triggered: push to feature branch"

@@ -1,0 +1,16 @@
+# Runs when a Pull Request is closed or merged (good for cleanup or post-merge actions).
+name: PR Closed
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+  pull_request:
+    types: [closed]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo message
+        run: echo "❌ Workflow triggered: Pull Request closed"

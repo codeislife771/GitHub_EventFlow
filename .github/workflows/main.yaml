@@ -1,0 +1,17 @@
+# Runs when code is pushed to the main branch (usually used for deploy or final tests).
+name: Push to Main
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo message
+        run: echo "✅ Workflow triggered: push to main branch"
