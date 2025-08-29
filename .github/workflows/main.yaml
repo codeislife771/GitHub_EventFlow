@@ -15,4 +15,4 @@ jobs:
  
     steps: 
     - name: Echo message
-      run: "Workflow triggered: push to main branch"
+      run: echo "Workflow triggered: push to main branch"
