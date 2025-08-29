@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo message
-        run: echo "❌ Workflow triggered: Pull Request closed"
+        run: echo "Workflow triggered: Pull Request closed"

@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo message
-        run: echo "🚀 Workflow triggered: push to feature branch"
+        run: echo "Workflow triggered: push to feature branch"
