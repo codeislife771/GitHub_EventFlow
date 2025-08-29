@@ -1,0 +1,2 @@
+Hello from feature branch 🚀
+Added a new line after submitting the Pull Request - this will trigger a Pull Request synchronize event
