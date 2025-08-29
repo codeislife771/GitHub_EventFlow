@@ -12,6 +12,7 @@ on:
 jobs:
   say-hello:
     runs-on: ubuntu-latest
-    steps:
-      - name: Echo message
-        run: echo "Workflow triggered: push to main branch"
+ 
+    steps: 
+    - name: Echo message
+      run: "Workflow triggered: push to main branch"
